@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clothes Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="panel" class="hidden">
+        <header>
+            <div>
+                <p class="eyebrow">SERVER TOOL</p>
+                <h1>Clothes editor</h1>
+            </div>
+            <button id="close" class="icon">×</button>
+        </header>
+        <section class="model-selector">
+            <label for="model">Ped model</label>
+            <select id="model"></select>
+        </section>
+        <section id="controls"></section>
+        <section class="actions">
+            <input id="preset-name" maxlength="32" placeholder="Preset name">
+            <button id="save">Save preset</button>
+            <button id="save-character">Save on character</button>
+        </section>
+        <section>
+            <h2>Saved presets</h2>
+            <div id="presets" class="presets"></div>
+        </section>
+        <p class="hint">Changes preview instantly. Press Escape to close.</p>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
